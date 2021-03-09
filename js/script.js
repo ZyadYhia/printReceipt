@@ -3,12 +3,13 @@ let counterStep = 0;
 let newField;
 let tablePrint;
 let productInfo = [];
+let tNumber;
 $("#addbtn").click(function () {
   fillReceipt();
   $("#gridContainer").append(newField);
 });
 
-function getProducts(rowNum) {
+function getProducts() {
   let totalBill = 0;
   for (let i = 0; i < counter.length; i++) {
     productInfo[i] = {
@@ -38,7 +39,9 @@ function getProducts(rowNum) {
 }
 
 $("#clcbtn").click(function () {
+  tNumber = "Table Number:   " + $("#tableNumber input").val();
   getProducts();
+  $("#fillReceipt label").append(tNumber);
   $("#tBody").html(tablePrint);
   $("#receipt").removeClass("d-none");
   $("#receipt").addClass("d-flix");
@@ -46,6 +49,9 @@ $("#clcbtn").click(function () {
 
 $("#closeIco").click(function () {
   tablePrint = "";
+  tNumber = " ";
+  $("#fillReceipt label").empty();
+  $("#tableNumber input").val("");
   $("#tBody").empty();
   $("#receipt").removeClass("d-flex");
   $("#receipt").addClass("d-none");
