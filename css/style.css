@@ -1,80 +1,97 @@
-body{    
-    padding: 25px;
-    font-family: 'Poppins', sans-serif;
+body {
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
 }
 
-.btn-c{
-    height: 38px !important;
+.btn-c {
+  height: 38px !important;
 }
-.table-bordered, th, td, tr,thead{
-    border: solid 3px black;
+.table-bordered,
+th,
+td,
+tr,
+thead {
+  border: solid 3px black;
 }
-.btn_cont{
-    background-color: transparent;
+.btn_cont {
+  background-color: transparent;
 }
-.IMC{
+.IMC {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#receipt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 222;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.receipt_container {
+  overflow-y: auto;
+  width: 75%;
+  height: 85%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#printBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#fillReceipt {
+  height: auto;
+}
+#closeIco {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  position: fixed;
+  height: 100px;
+}
+footer img {
+  display: inline-block;
+  height: 50px !important;
+}
+footer p {
+  font-size: 0.75rem;
+}
+
+footer h6 {
+  font-size: 0.8rem;
+}
+
+.receipt_title {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-#receipt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 222;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color:rgba(0, 0, 0, 0.8);
-}
-.receipt_container{
-    overflow-y: auto;
-    width: 75%;
-    height: 85%;
-    background-color: rgb(255,255,255);
-    padding: 10px 30px;
+    flex-wrap: wrap;
 }
 
-#printBtn{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-#fillReceipt{
-    height: auto;
-
-}
-#closeIco{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
+.receipt_title img {
+  width: 150px;
+  height: 150px;
 }
 
-footer{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0%;
-    position: fixed;
-    height: 100px;
-}
-footer img{
-    display: inline-block;
-    height: 50px !important;
-}
-footer p{
-    font-size: 0.75rem;
-}
-
-footer h6{
-    font-size: .8rem;
-}
