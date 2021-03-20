@@ -70,18 +70,19 @@ footer {
   align-items: center;
   bottom: 0%;
   position: fixed;
-  height: 100px;
+  /* height: 100px; */
 }
 footer img {
   display: inline-block;
-  height: 50px !important;
+  height: 100px !important;
+  /* drop-shadow(16px 16px 10px black) */
 }
 footer p {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
 footer h6 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .receipt_title {
@@ -97,4 +98,13 @@ footer h6 {
 .address {
   font-size: 1.75rem;
   font-weight: 650;
+}
+
+#logoReceipt {
+  height: 200px;
+  width: 200px;
+}
+
+#logoReceipt p {
+  font-size: 1rem;
 }
