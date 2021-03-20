@@ -85,13 +85,16 @@ footer h6 {
 }
 
 .receipt_title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .receipt_title img {
   width: 150px;
   height: 150px;
 }
-
+.address {
+  font-size: 1.75rem;
+  font-weight: 650;
+}
